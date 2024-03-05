@@ -44,6 +44,10 @@ def lowe(val: str) -> None:
 
     print(res)
 
+def invert(val: str) -> None:
+    '''Inverts input, usage : `$python3 cliutils.py invert <Text here>'''
+    print(val[::-1])
+
 
 
 #Add your function to the dict
@@ -51,6 +55,7 @@ func_dict = {
     "help":help_,
     "upper":upp,
     "lower":lowe,
-    "list":list_functs
+    "list":list_functs,
+    "invert":invert
     }
 

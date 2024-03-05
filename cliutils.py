@@ -21,11 +21,11 @@ def handle_args() -> None:
     func = sys.argv[1]
     func_args = ' '.join(sys.argv[2:])
     
-        try:
-            func_dict[func](func_args)
+    try:
+        func_dict[func](func_args)
 
-        except KeyError:
-            print("No such util. run '$python3 cliutils.py list' to get a list of available utils")
+    except KeyError:
+        print("No such util. run '$python3 cliutils.py list' to get a list of available utils")
 
         return
 
