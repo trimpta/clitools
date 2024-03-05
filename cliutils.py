@@ -18,10 +18,9 @@ def handle_args() -> None:
         print("Please enter util name.")
         return
     
-    else:
-        func = sys.argv[1]
-        func_args = ' '.join(sys.argv[2:])
-        
+    func = sys.argv[1]
+    func_args = ' '.join(sys.argv[2:])
+    
         try:
             func_dict[func](func_args)
 
