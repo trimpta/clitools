@@ -18,6 +18,9 @@ def list_functs(args) -> None:
         for key in func_dict:
             print(f"{key}: {func_dict[key].__doc__}")
 
+    else:
+        print("\n".join([key for key in func_dict]).lstrip("\n"))
+
 #Example functions
 #Make sure function accepts only one str parameter
 
