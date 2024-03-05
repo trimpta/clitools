@@ -21,6 +21,10 @@ def list_functs(args) -> None:
     else:
         print("\n".join([key for key in func_dict]).lstrip("\n"))
 
+def _m(args: str) -> None:
+    '''Prints -m help page'''
+    raise NotImplementedError("Sucks to suck ill implement this later :>")
+
 #Example functions
 #Make sure function accepts only one str parameter
 
@@ -56,6 +60,7 @@ func_dict = {
     "upper":upp,
     "lower":lowe,
     "list":list_functs,
-    "invert":invert
+    "invert":invert,
+    "-m": _m
     }
 
