@@ -1,4 +1,5 @@
 '''Store your functions here'''
+from random import choice
 
 
 def help_(args) -> None :
@@ -55,15 +56,22 @@ def invert(args) -> None:
     '''Inverts input, usage : `$python3 cliutils.py invert "<Text here>"'''
     print(args[0][::-1])
 
+def randomcase(args):
+    '''converts input to randomcase. usage: `$python3 cliutils.py randomcase "<text here>"`'''
+
+    print(''.join(choice((str.upper, str.lower))(char) for char in args[0]))
+
+    
 
 
 #Add your function to the dict
 func_dict = {
     "help":help_,
+    "-m": _m,
     "upper":upp,
     "lower":lowe,
     "list":list_functs,
     "invert":invert,
-    "-m": _m
+    "randomcase":randomcase
     }
 
