@@ -18,15 +18,17 @@ def handle_args() -> None:
         print("Please enter util name.")
         return
     
-    func = sys.argv[1]
-    func_args = ' '.join(sys.argv[2:])
-    
+    program, func, *func_args = sys.argv
+
     try:
         func_dict[func](func_args)
 
     except KeyError:
         print("No such util. run '$python3 cliutils.py list' to get a list of available utils")
-
+        return
+    
+    except IndexError:
+        print("Please provide proper arguments.")
         return
 
 
@@ -34,3 +36,4 @@ def handle_args() -> None:
 if __name__ == "__main__":
 
     handle_args()
+ 
