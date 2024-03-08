@@ -38,7 +38,7 @@ def upp(args) -> None :
     res = ""
 
     for i in args[0]:
-        res += i.upper() if "a" < i < "z" else i
+        res += i.upper() if "a" <= i <= "z" else i
 
     print(res)
 
@@ -48,7 +48,7 @@ def lowe(args) -> None:
     res = ""
 
     for i in args[0]:
-        res += i.lower() if "A" < i < "Z" else i
+        res += i.lower() if "A" <= i <= "Z" else i
 
     print(res)
 
