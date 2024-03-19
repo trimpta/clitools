@@ -2,7 +2,6 @@
 from random import choice
 
 
-
 #Example functions
 #Make sure function accepts only one list parameter
 
